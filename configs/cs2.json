@@ -1,0 +1,40 @@
+{
+  "name": "Counter-Strike 2",
+  "game": "cs2",
+  "description": "Fast gunfights and clutches. Heavy audio weighting for sprays and one-taps.",
+  "detection": {
+    "weights": { "audio": 0.5, "motion": 0.2, "flash": 0.12, "text": 0.18 },
+    "min_score": 0.5,
+    "window_seconds": 2.0,
+    "pad_before": 1.3,
+    "pad_after": 1.1,
+    "merge_gap": 1.0,
+    "keywords": ["killed", "headshot", "ace", "clutch", "defused", "bomb", "1v", "knife"]
+  },
+  "montage": {
+    "target_highlights": 13,
+    "min_highlights": 8,
+    "max_highlights": 15,
+    "slowmo_on_peak": true,
+    "punch_zoom": true,
+    "shake": true,
+    "transition": "glitch",
+    "build_to_peak": true,
+    "beat_sync": true
+  },
+  "style": {
+    "color_grade": "cinematic",
+    "caption_color": "#FFFFFF",
+    "caption_highlight": "#F2A900",
+    "caption_outline": "#000000",
+    "overlay_color": "#F2A900",
+    "intro_text": ""
+  },
+  "overlays": {
+    "kill": "FRAGGED",
+    "clutch": "1vX CLUTCH",
+    "epic": "ACE!",
+    "action": "ONE TAP",
+    "ace": "ACE!"
+  }
+}

@@ -1,0 +1,16 @@
+# ---------------------------------------------------------------------------
+# GameMontage AI - optional AI / advanced feature dependencies
+# ---------------------------------------------------------------------------
+# These enable: Whisper captions, kill-feed OCR, and TTS voiceover.
+# Install AFTER requirements.txt:  pip install -r requirements-ai.txt
+# Some of these are large (PyTorch / CUDA). See README for GPU notes.
+# ---------------------------------------------------------------------------
+
+# Speech-to-text captions (CPU or CUDA)
+faster-whisper>=1.0.0
+
+# Kill-feed / on-screen text detection (also needs the Tesseract binary)
+pytesseract>=0.3.10
+
+# Text-to-speech voiceover (free, no API key required)
+edge-tts>=6.1.10

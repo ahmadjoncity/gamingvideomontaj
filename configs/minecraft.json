@@ -1,0 +1,40 @@
+{
+  "name": "Minecraft",
+  "game": "minecraft",
+  "description": "Relaxed pacing for builds, mining and PvP. Longer windows, warm cozy grade.",
+  "detection": {
+    "weights": { "audio": 0.35, "motion": 0.35, "flash": 0.2, "text": 0.1 },
+    "min_score": 0.4,
+    "window_seconds": 3.5,
+    "pad_before": 1.5,
+    "pad_after": 1.5,
+    "merge_gap": 1.5,
+    "keywords": ["was slain", "death", "achievement", "diamond", "creeper", "wins"]
+  },
+  "montage": {
+    "target_highlights": 10,
+    "min_highlights": 6,
+    "max_highlights": 14,
+    "slowmo_on_peak": false,
+    "punch_zoom": true,
+    "shake": false,
+    "transition": "fade",
+    "build_to_peak": false,
+    "beat_sync": true
+  },
+  "style": {
+    "color_grade": "warm",
+    "caption_color": "#FFFFFF",
+    "caption_highlight": "#7BFF6B",
+    "caption_outline": "#000000",
+    "overlay_color": "#7BFF6B",
+    "intro_text": ""
+  },
+  "overlays": {
+    "kill": "GG",
+    "clutch": "CLUTCH BUILD",
+    "epic": "DIAMONDS!",
+    "action": "LET'S GO",
+    "ace": "BIG W"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "My Custom Style",
+  "game": "custom",
+  "description": "Copy me into configs/ and tweak. Anything you omit falls back to default.json.",
+  "detection": {
+    "weights": { "audio": 0.45, "motion": 0.3, "flash": 0.15, "text": 0.1 },
+    "min_score": 0.5,
+    "window_seconds": 2.4,
+    "pad_before": 1.3,
+    "pad_after": 1.1,
+    "merge_gap": 1.2,
+    "keywords": ["kill", "clutch", "ace", "win"]
+  },
+  "montage": {
+    "target_highlights": 12,
+    "min_highlights": 8,
+    "max_highlights": 15,
+    "slowmo_on_peak": true,
+    "punch_zoom": true,
+    "shake": true,
+    "transition": "zoom",
+    "build_to_peak": true,
+    "beat_sync": true
+  },
+  "style": {
+    "color_grade": "vibrant",
+    "caption_color": "#FFFFFF",
+    "caption_highlight": "#FFE14D",
+    "caption_outline": "#000000",
+    "overlay_color": "#00E5FF",
+    "intro_text": "MY EPIC MONTAGE"
+  },
+  "overlays": {
+    "kill": "ELIMINATED",
+    "clutch": "CLUTCH!",
+    "epic": "INSANE",
+    "action": "LET'S GO",
+    "ace": "ACE!"
+  }
+}

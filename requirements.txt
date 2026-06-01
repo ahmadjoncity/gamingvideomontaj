@@ -1,0 +1,25 @@
+# ---------------------------------------------------------------------------
+# GameMontage AI - core runtime dependencies
+# ---------------------------------------------------------------------------
+# Install with:  pip install -r requirements.txt
+# For optional AI / TTS extras, see requirements-ai.txt or pyproject extras.
+# ---------------------------------------------------------------------------
+
+# GUI
+customtkinter>=5.2.2
+Pillow>=10.2.0
+
+# Numerics
+numpy>=1.26.0
+
+# Video / image processing
+moviepy>=1.0.3,<2.0.0
+opencv-python>=4.9.0
+imageio>=2.34.0
+imageio-ffmpeg>=0.4.9
+proglog>=0.1.10
+
+# Audio analysis
+pydub>=0.25.1
+librosa>=0.10.1
+soundfile>=0.12.1

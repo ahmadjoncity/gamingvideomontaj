@@ -1,0 +1,40 @@
+{
+  "name": "Default",
+  "game": "default",
+  "description": "Generic montage style that works for any game.",
+  "detection": {
+    "weights": { "audio": 0.4, "motion": 0.3, "flash": 0.2, "text": 0.1 },
+    "min_score": 0.45,
+    "window_seconds": 2.5,
+    "pad_before": 1.2,
+    "pad_after": 1.0,
+    "merge_gap": 1.0,
+    "keywords": ["kill", "killed", "headshot", "wins", "victory", "eliminated"]
+  },
+  "montage": {
+    "target_highlights": 12,
+    "min_highlights": 6,
+    "max_highlights": 15,
+    "slowmo_on_peak": true,
+    "punch_zoom": true,
+    "shake": true,
+    "transition": "zoom",
+    "build_to_peak": true,
+    "beat_sync": true
+  },
+  "style": {
+    "color_grade": "vibrant",
+    "caption_color": "#FFFFFF",
+    "caption_highlight": "#FFE14D",
+    "caption_outline": "#000000",
+    "overlay_color": "#00E5FF",
+    "intro_text": ""
+  },
+  "overlays": {
+    "kill": "ELIMINATED",
+    "clutch": "CLUTCH!",
+    "epic": "INSANE",
+    "action": "LET'S GO",
+    "ace": "ACE!"
+  }
+}

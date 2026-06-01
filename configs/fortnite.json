@@ -1,0 +1,40 @@
+{
+  "name": "Fortnite",
+  "game": "fortnite",
+  "description": "Build-fight chaos: more motion weighting, vibrant cartoon look, victory royale hype.",
+  "detection": {
+    "weights": { "audio": 0.35, "motion": 0.35, "flash": 0.2, "text": 0.1 },
+    "min_score": 0.45,
+    "window_seconds": 2.8,
+    "pad_before": 1.2,
+    "pad_after": 1.2,
+    "merge_gap": 1.2,
+    "keywords": ["eliminated", "knocked", "victory", "royale", "headshot", "you placed"]
+  },
+  "montage": {
+    "target_highlights": 12,
+    "min_highlights": 7,
+    "max_highlights": 15,
+    "slowmo_on_peak": true,
+    "punch_zoom": true,
+    "shake": true,
+    "transition": "zoom",
+    "build_to_peak": true,
+    "beat_sync": true
+  },
+  "style": {
+    "color_grade": "vibrant",
+    "caption_color": "#FFFFFF",
+    "caption_highlight": "#7CF6FF",
+    "caption_outline": "#1A1240",
+    "overlay_color": "#B14DFF",
+    "intro_text": ""
+  },
+  "overlays": {
+    "kill": "ELIMINATED",
+    "clutch": "BIG W",
+    "epic": "CRANKING 90s",
+    "action": "NO SCOPE",
+    "ace": "VICTORY ROYALE"
+  }
+}

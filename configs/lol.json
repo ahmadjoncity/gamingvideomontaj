@@ -1,0 +1,40 @@
+{
+  "name": "League of Legends",
+  "game": "lol",
+  "description": "MOBA teamfights and outplays: motion + flash heavy (abilities), epic announcer keywords.",
+  "detection": {
+    "weights": { "audio": 0.35, "motion": 0.25, "flash": 0.3, "text": 0.1 },
+    "min_score": 0.5,
+    "window_seconds": 3.0,
+    "pad_before": 1.6,
+    "pad_after": 1.4,
+    "merge_gap": 1.4,
+    "keywords": ["double kill", "triple kill", "quadra", "penta", "ace", "shutdown", "executed"]
+  },
+  "montage": {
+    "target_highlights": 11,
+    "min_highlights": 6,
+    "max_highlights": 14,
+    "slowmo_on_peak": true,
+    "punch_zoom": true,
+    "shake": false,
+    "transition": "fade",
+    "build_to_peak": true,
+    "beat_sync": true
+  },
+  "style": {
+    "color_grade": "cinematic",
+    "caption_color": "#FFFFFF",
+    "caption_highlight": "#C8AA6E",
+    "caption_outline": "#0A1428",
+    "overlay_color": "#C8AA6E",
+    "intro_text": ""
+  },
+  "overlays": {
+    "kill": "SHUTDOWN",
+    "clutch": "OUTPLAYED",
+    "epic": "PENTAKILL!",
+    "action": "DOUBLE KILL",
+    "ace": "ACE!"
+  }
+}

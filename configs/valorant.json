@@ -1,0 +1,40 @@
+{
+  "name": "Valorant",
+  "game": "valorant",
+  "description": "Tactical FPS: emphasise gunfire spikes and kill-feed text. Tuned for aces and clutches.",
+  "detection": {
+    "weights": { "audio": 0.45, "motion": 0.2, "flash": 0.15, "text": 0.2 },
+    "min_score": 0.5,
+    "window_seconds": 2.2,
+    "pad_before": 1.4,
+    "pad_after": 1.2,
+    "merge_gap": 1.2,
+    "keywords": ["ace", "kill", "killed", "headshot", "clutch", "spike", "defused", "eliminated", "round won"]
+  },
+  "montage": {
+    "target_highlights": 12,
+    "min_highlights": 8,
+    "max_highlights": 15,
+    "slowmo_on_peak": true,
+    "punch_zoom": true,
+    "shake": true,
+    "transition": "zoom",
+    "build_to_peak": true,
+    "beat_sync": true
+  },
+  "style": {
+    "color_grade": "vibrant",
+    "caption_color": "#FFFFFF",
+    "caption_highlight": "#FF4655",
+    "caption_outline": "#0F1923",
+    "overlay_color": "#FF4655",
+    "intro_text": ""
+  },
+  "overlays": {
+    "kill": "ENEMY DOWN",
+    "clutch": "CLUTCH!",
+    "epic": "ACE!",
+    "action": "NICE SHOT",
+    "ace": "ACE!"
+  }
+}

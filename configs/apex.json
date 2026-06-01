@@ -1,0 +1,40 @@
+{
+  "name": "Apex Legends",
+  "game": "apex",
+  "description": "High-mobility battle royale: balanced audio/motion, punchy HDR look, champion hype.",
+  "detection": {
+    "weights": { "audio": 0.4, "motion": 0.3, "flash": 0.18, "text": 0.12 },
+    "min_score": 0.48,
+    "window_seconds": 2.6,
+    "pad_before": 1.3,
+    "pad_after": 1.2,
+    "merge_gap": 1.2,
+    "keywords": ["knocked", "eliminated", "kill", "champion", "squad", "finisher", "headshot"]
+  },
+  "montage": {
+    "target_highlights": 12,
+    "min_highlights": 8,
+    "max_highlights": 15,
+    "slowmo_on_peak": true,
+    "punch_zoom": true,
+    "shake": true,
+    "transition": "zoom",
+    "build_to_peak": true,
+    "beat_sync": true
+  },
+  "style": {
+    "color_grade": "hdr",
+    "caption_color": "#FFFFFF",
+    "caption_highlight": "#FF6B35",
+    "caption_outline": "#11141C",
+    "overlay_color": "#FF6B35",
+    "intro_text": ""
+  },
+  "overlays": {
+    "kill": "KNOCKED",
+    "clutch": "1vSQUAD",
+    "epic": "INSANE",
+    "action": "CRACKED",
+    "ace": "CHAMPION"
+  }
+}
