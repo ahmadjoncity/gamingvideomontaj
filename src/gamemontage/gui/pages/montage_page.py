@@ -29,6 +29,8 @@ class MontagePage(BasePage):
         body.grid(row=1, column=0, sticky="nsew", padx=20, pady=8)
         body.grid_columnconfigure((0, 1), weight=1, uniform="cols")
 
+        if self.controller.project.montage_overrides is None:
+            self.controller.project.montage_overrides = {}
         ov = self.controller.project.montage_overrides
 
         # ----- Style card -----
